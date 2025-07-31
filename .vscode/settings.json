@@ -1,9 +1,13 @@
 {
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16+8"
+        }
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
         "Heranca/abstrata"
     ],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ]
+    "java.project.outputPath": "bin"
 }
