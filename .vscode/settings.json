@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
         "Heranca/salario",
+        "Heranca/retangulo_completo",
         "Heranca/retangulo",
         "Heranca/forma",
-        "Heranca/retangulo_completo"
+        "Heranca/quadrado"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
