@@ -1,4 +1,4 @@
-public class Program {
+/*public class Program {
         public static void main(String[] args) {
             FormaGeometrica formaGeometrica = new FormaGeometrica();
 
@@ -8,4 +8,4 @@ public class Program {
                 System.out.println(e);
             }
         }
-    }
+    }*/
