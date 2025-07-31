@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "Heranca/salario"
+        "Heranca/salario",
+        "Heranca/retangulo"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
