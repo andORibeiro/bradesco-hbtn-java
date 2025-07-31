@@ -1,8 +1,6 @@
-public class FormaGeometrica {
-    
-    public double area() throws Exception {
-        throw new java.lang.UnsupportedOperationException("Funcao area nao implementada");
-    }
+public abstract class FormaGeometrica {
+
+    public abstract double area();
 
     @Override
     public String toString() {
