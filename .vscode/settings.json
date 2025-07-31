@@ -1,6 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "."
+        "Heranca/abstrata"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
