@@ -3,8 +3,9 @@
         "Heranca/salario",
         "Heranca/retangulo_completo",
         "Heranca/retangulo",
+        "Heranca/quadrado",
         "Heranca/forma",
-        "Heranca/quadrado"
+        "Heranca/abstrata"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
