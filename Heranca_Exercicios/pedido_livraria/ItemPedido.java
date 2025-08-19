@@ -1,6 +1,4 @@
-package pedido_livraria;
-
-import pedido_livraria.produtos.Produto;
+import produtos.Produto;
 
 public class ItemPedido {
     private int quantidade;

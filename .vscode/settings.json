@@ -8,7 +8,7 @@
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
         "Heranca/abstrata",
-        "Heranca_Exercicios/src"
+        "Heranca_Exercicios/pedido_livraria"
     ],
     "java.project.outputPath": "bin"
 }
