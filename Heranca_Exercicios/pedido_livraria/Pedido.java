@@ -1,3 +1,6 @@
+import produtos.Dvd;
+import produtos.Livro;
+
 public class Pedido {
     private double percentualDesconto;
     private ItemPedido[] itens;
@@ -6,7 +9,26 @@ public class Pedido {
         this.percentualDesconto = percentualDesconto;
         this.itens = itens;
     }
-    
+public void apresentarResumoPedido() {
+    System.out.println("------- RESUMO PEDIDO -------");
+    for (ItemPedido item : itens) {
+        if (item != null) {
+            System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f\n",
+                    item.getProduto().getClass().getSimpleName(),
+                    item.getProduto().getTitulo(),
+                    item.getProduto().obterPrecoLiquido(),
+                    item.getQuantidade(),
+                    item.obterSubtotal());
+        }
+    }
+    System.out.printf("----------------------------\n");
+    System.out.printf("DESCONTO: %.2f\n", percentualDesconto);
+    System.out.printf("TOTAL PRODUTOS: %.2f\n", calcularTotal());
+    System.out.printf("----------------------------\n");
+    System.out.printf("TOTAL PEDIDO: %.2f\n", calcularTotal());
+    System.out.printf("----------------------------\n");
+}
+
     public double calcularTotal() {
         double total = 0;
         for (ItemPedido item : itens) {
