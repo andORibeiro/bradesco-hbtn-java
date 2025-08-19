@@ -1,6 +1,3 @@
-import produtos.Dvd;
-import produtos.Livro;
-
 public class Pedido {
     private double percentualDesconto;
     private ItemPedido[] itens;
