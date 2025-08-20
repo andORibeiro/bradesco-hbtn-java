@@ -5,6 +5,5 @@ public class MaquinaWorkflow {
         for (Atividade atividade : workflow.getAtividades()) {
             atividade.executar();
         }
-        System.out.println("-----");
     }
 }
