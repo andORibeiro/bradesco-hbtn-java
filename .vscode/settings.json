@@ -7,8 +7,7 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "Interfaces/workflow",
-        "Interfaces_Exercicios/workflow"
+        "Interfaces_Exercicios/resumo_pedido"
     ],
     "java.project.outputPath": "bin"
 }
