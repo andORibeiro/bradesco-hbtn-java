@@ -7,7 +7,7 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "0x02/quadrado"
+        "0x03/livraria"
     ],
     "java.project.outputPath": "bin"
 }
