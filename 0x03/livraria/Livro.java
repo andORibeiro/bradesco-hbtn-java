@@ -18,7 +18,7 @@ public class Livro {
 
     public void setTitulo(String titulo) throws LivroInvalidoException{
         if(titulo.length() < 3){
-            throw new LivroInvalidoException("Titulo deve ter no minimo 3 caracteres");
+            throw new LivroInvalidoException("Titulo de livro invalido");
         }
         this.titulo = titulo;
     }
@@ -40,7 +40,7 @@ public class Livro {
 
     public void setPreco(double preco) throws LivroInvalidoException {
         if (preco < 0) {
-            throw new LivroInvalidoException("Preco deve ser positivo");
+            throw new LivroInvalidoException("Preco de livro invalido");
         }
         this.preco = preco;
     }
