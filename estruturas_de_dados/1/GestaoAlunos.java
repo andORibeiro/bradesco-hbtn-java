@@ -11,7 +11,7 @@ public class GestaoAlunos {
         alunos.add(aluno);
     }
 
-    public void removerAluno(Aluno aluno) {
+    public void excluirAluno(Aluno aluno) {  // Mudou de removerAluno para excluirAluno
         alunos.removeIf(a -> a.getNome().equals(aluno.getNome()));
     }
 
@@ -65,7 +65,7 @@ class Main {
         
         // 4. Excluir um aluno
         System.out.println("4. Removendo aluno 'João Silva':");
-        gestao.removerAluno(aluno1);
+        gestao.excluirAluno(aluno1);
         System.out.println("Aluno removido com sucesso!");
         System.out.println("Lista atualizada:");
         gestao.listarAlunos();
@@ -74,7 +74,7 @@ class Main {
         // 5. Tentar excluir um aluno inexistente e buscar outro aluno
         System.out.println("5. Tentando remover aluno inexistente 'Carlos Ferreira':");
         Aluno alunoInexistente = new Aluno("Carlos Ferreira", 99999);
-        gestao.removerAluno(alunoInexistente);
+        gestao.excluirAluno(alunoInexistente);
         System.out.println("Operação de remoção executada (sem efeito para aluno inexistente)");
         
         System.out.println("\nBuscando aluno 'Pedro Oliveira':");
