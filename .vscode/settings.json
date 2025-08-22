@@ -7,7 +7,8 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "0x03/contas_especiais"
+        "0x03/contas_especiais",
+        "estruturas_de_dados/0"
     ],
     "java.project.outputPath": "bin"
 }
