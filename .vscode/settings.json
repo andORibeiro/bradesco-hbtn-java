@@ -7,7 +7,7 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "complexidade/1"
+        "complexidade/2"
     ],
     "java.project.outputPath": "bin"
 }
