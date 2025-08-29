@@ -20,14 +20,12 @@ public class PessoasArray {
     // implementar o método de buscaLinear
     public void buscaLinear(String nome){
         boolean encontrado = false;
-        int posicao = -1;
         System.out.println("Procurando pelo nome: \"" +nome +"\"");
         for (int i = 0; i < nomes.length; i++){
             System.out.println("Passando pelo indice:" + i );
             if(nomes[i].equals(nome)){
                 System.out.println("Nome pesquisado é " + nome + " que está na posição " + i);
                 encontrado = true;
-                posicao = i;
             }
         }
         if(!encontrado){
