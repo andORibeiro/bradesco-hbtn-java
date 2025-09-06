@@ -1,0 +1,17 @@
+import java.util.Locale;
+
+public class Eletronico {
+
+    private String descricao;
+    private double valor;
+
+    public Eletronico(String descricao, double valor) {
+        this.descricao = descricao;
+        this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(new Locale("pt", "BR"), "[%s] R$ %.6f", descricao, valor);
+    }
+}
