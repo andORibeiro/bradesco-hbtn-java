@@ -1,14 +1,15 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class Blog{
-     private ArrayList<Post> postagens;
+     private List<Post> postagens;  // Mudou de ArrayList para List
 
      public Blog(){
-         postagens = new ArrayList<>();
+         postagens = new ArrayList<>();  // Implementação continua sendo ArrayList
      }
 
     public void adicionarPostagem(Post postagem){
