@@ -11,7 +11,7 @@ public class Autor implements Comparable<Autor> {
 
     @Override
     public String toString() {
-        return nome + " " + sobrenome;  // Changed from "<nome> <sobrenome>"
+        return nome + " " + sobrenome;
     }
 
     @Override
@@ -29,11 +29,12 @@ public class Autor implements Comparable<Autor> {
 
     @Override
     public int compareTo(Autor outro) {
-        int comparacaoSobrenome = this.sobrenome.compareTo(outro.sobrenome);
-        if (comparacaoSobrenome != 0) {
-            return comparacaoSobrenome;
+        // Mudança: ordenar por nome primeiro, depois sobrenome
+        int comparacaoNome = this.nome.compareTo(outro.nome);
+        if (comparacaoNome != 0) {
+            return comparacaoNome;
         }
-        return this.nome.compareTo(outro.nome);
+        return this.sobrenome.compareTo(outro.sobrenome);
     }
 
     // Getters

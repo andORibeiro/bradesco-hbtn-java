@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Blog {
     private List<Post> postagens;
@@ -27,10 +26,18 @@ public class Blog {
     }
 
     public Map<Categorias, Integer> obterContagemPorCategoria() {
-        Map<Categorias, Integer> contagem = new HashMap<>();
+        // Usar LinkedHashMap para manter ordem de inserção
+        Map<Categorias, Integer> contagem = new LinkedHashMap<>();
+        
+        // Adicionar categorias na ordem desejada
+        contagem.put(Categorias.DEVOPS, 0);
+        contagem.put(Categorias.DESENVOLVIMENTO, 0);
+        contagem.put(Categorias.DATA_SCIENCE, 0);
+        
+        // Contar as postagens
         for (Post postagem : postagens) {
             Categorias categoria = postagem.getCategoria();
-            contagem.put(categoria, contagem.getOrDefault(categoria, 0) + 1);
+            contagem.put(categoria, contagem.get(categoria) + 1);
         }
         return contagem;
     }
@@ -56,10 +63,11 @@ public class Blog {
     }
 
     public Map<Categorias, Set<Post>> obterTodosPostsPorCategorias() {
-        Map<Categorias, Set<Post>> resultado = new HashMap<>();
-        for (Categorias categoria : Categorias.values()) {
-            resultado.put(categoria, obterPostsPorCategoria(categoria));
-        }
+        // Usar LinkedHashMap para manter ordem específica
+        Map<Categorias, Set<Post>> resultado = new LinkedHashMap<>();
+        resultado.put(Categorias.DEVOPS, obterPostsPorCategoria(Categorias.DEVOPS));
+        resultado.put(Categorias.DESENVOLVIMENTO, obterPostsPorCategoria(Categorias.DESENVOLVIMENTO));
+        resultado.put(Categorias.DATA_SCIENCE, obterPostsPorCategoria(Categorias.DATA_SCIENCE));
         return resultado;
     }
 
