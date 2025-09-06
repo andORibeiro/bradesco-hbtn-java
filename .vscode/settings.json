@@ -7,7 +7,7 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "Generics_Exercises/armazem"
+        "Generics_Exercises/armazem_especifico"
     ],
     "java.project.outputPath": "bin"
 }
