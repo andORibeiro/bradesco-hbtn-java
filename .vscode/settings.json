@@ -8,9 +8,10 @@
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
         "Streams_Collectors_Optional/preco_minimo",
+        "Streams_Collectors_Optional/pedidos_eletronico",
         "Lambda_Exercicios/predicado",
         "Collections_Exercicios/postagem_blog",
-        "Streams_Collectors_Optional/pedidos_eletronico"
+        "Streams_Collectors_Optional/desconto_eletronicos"
     ],
     "java.project.outputPath": "bin"
 }

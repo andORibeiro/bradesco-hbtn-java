@@ -30,4 +30,16 @@ public class Consulta {
                               .anyMatch(prod -> prod.getCategoria() == CategoriaProduto.ELETRONICO))
                 .collect(Collectors.toList());
     }
+
+    public static List<Produto> aplicar15PorcentoDescontoEletronicos(List<Produto> produtos) {
+        return produtos.stream()
+                .map(p -> {
+                    if (p.getCategoria() == CategoriaProduto.ELETRONICO) {
+                        // cria novo produto com preço com 15% de desconto (mantém os outros campos)
+                        return new Produto(p.getCodigo(), p.getNome(), p.getCategoria(), p.getPreco() * 0.85);
+                    }
+                    return p;
+                })
+                .collect(Collectors.toList());
+    }
 }
