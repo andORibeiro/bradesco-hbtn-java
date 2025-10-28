@@ -7,9 +7,9 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "Lambda_Exercicios/consulta_produtos",
+        "Lambda_Exercicios/predicado",
         "Collections_Exercicios/postagem_blog",
-        "Lambda_Exercicios/predicado"
+        "Streams_Collectors_Optional/livros"
     ],
     "java.project.outputPath": "bin"
 }
