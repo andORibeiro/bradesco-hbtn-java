@@ -22,4 +22,12 @@ public class Consulta {
                 .filter(p -> p.getPreco() >= precoMinimo)
                 .collect(Collectors.toList());
     }
+
+    public static List<Pedido> obterPedidosComEletronicos(List<Pedido> pedidos) {
+        return pedidos.stream()
+                .filter(p -> p.getProdutos()
+                              .stream()
+                              .anyMatch(prod -> prod.getCategoria() == CategoriaProduto.ELETRONICO))
+                .collect(Collectors.toList());
+    }
 }

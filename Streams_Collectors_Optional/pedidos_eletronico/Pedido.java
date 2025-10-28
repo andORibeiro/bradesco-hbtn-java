@@ -22,4 +22,9 @@ public class Pedido {
     public Cliente getCliente() {
         return cliente;
     }
+
+    @Override
+    public String toString() {
+        return String.format("[%d] %s", codigo, cliente.getNome());
+    }
 }

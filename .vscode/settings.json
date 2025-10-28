@@ -7,11 +7,10 @@
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "Streams_Collectors_Optional/maior_preco",
-        "Streams_Collectors_Optional/livros",
+        "Streams_Collectors_Optional/preco_minimo",
         "Lambda_Exercicios/predicado",
         "Collections_Exercicios/postagem_blog",
-        "Streams_Collectors_Optional/preco_minimo"
+        "Streams_Collectors_Optional/pedidos_eletronico"
     ],
     "java.project.outputPath": "bin"
 }
