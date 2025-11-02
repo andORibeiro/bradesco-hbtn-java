@@ -1,5 +1,6 @@
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 public class Pessoa{
     private int codigo;
@@ -50,10 +51,7 @@ public class Pessoa{
 
     @Override
     public String toString(){
-        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
-        symbols.setDecimalSeparator(',');
-        symbols.setGroupingSeparator('.');
-        DecimalFormat df = new DecimalFormat("0.00000", symbols);
-        return "[" + codigo + "] " + nome + " " + cargo + " " + idade + " R$ " + df.format(salario);
+        return String.format(new Locale("pt", "BR"), "[%d] %s %s %d R$ %.6f",
+                this.codigo, this.nome, this.cargo, this.idade, this.salario);
     }
 }
