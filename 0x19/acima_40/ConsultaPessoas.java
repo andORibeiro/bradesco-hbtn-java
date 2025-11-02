@@ -57,7 +57,9 @@ public class ConsultaPessoas {
 
         Map<String, List<Pessoa>> resultado = new LinkedHashMap<>();
         for (String k : ordem) {
-            resultado.put(k, agrupado.getOrDefault(k, List.of()));
+            if (agrupado.containsKey(k)) {              
+                resultado.put(k, agrupado.get(k));
+            }
         }
         return resultado;
     }
