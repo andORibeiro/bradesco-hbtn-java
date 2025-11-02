@@ -43,4 +43,22 @@ public class ConsultaPessoas {
         }
         return resultado;
     }
+
+    public static Map<String, List<Pessoa>> obterPessoasPorCargoAcimaDe40anos(List<Pessoa> pessoas) {
+        List<String> ordem = List.of("Product Owner", "Analista QA", "Desenvolvedor");
+        Comparator<String> cmp = Comparator.comparingInt(ordem::indexOf);
+
+        Map<String, List<Pessoa>> agrupado = pessoas.stream()
+            .collect(Collectors.groupingBy(
+                Pessoa::getCargo,
+                () -> new TreeMap<>(cmp),
+                Collectors.filtering(p -> p.getIdade() > 40, Collectors.toList())
+            ));
+
+        Map<String, List<Pessoa>> resultado = new LinkedHashMap<>();
+        for (String k : ordem) {
+            resultado.put(k, agrupado.getOrDefault(k, List.of()));
+        }
+        return resultado;
+    }
 }
