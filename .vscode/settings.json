@@ -9,9 +9,10 @@
     "java.project.sourcePaths": [
         "Streams_Collectors_Optional/preco_minimo",
         "Streams_Collectors_Optional/pedidos_eletronico",
+        "Streams_Collectors_Optional/desconto_eletronicos",
         "Lambda_Exercicios/predicado",
         "Collections_Exercicios/postagem_blog",
-        "Streams_Collectors_Optional/desconto_eletronicos"
+        "0x19/pessoa_por_cargo"
     ],
     "java.project.outputPath": "bin"
 }
